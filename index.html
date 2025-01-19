@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IMT - Ichalkaranji Municipal Transport</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <!-- Top Bar -->
+    <div class="top-bar">
+        <div class="container">
+            <div class="contact-info">
+                <span><i class="fas fa-phone"></i> Helpline: 123-456-7890</span>
+                <span><i class="fas fa-envelope"></i> contact@imt.com</span>
+            </div>
+            <div class="language-switch">
+                <button id="languageToggle">मराठी</button>
+            </div>
+        </div>
+    </div>
+
+
+    <header>
+        <div class="container">
+            <div class="logo">
+                <img src="logo.png" alt="IMT Logo">
+                <div class="logo-text">
+                    <h1 data-en="Ichalkaranji Municipal Transport" data-mr="इचलकरंजी महानगर परिवहन">Ichalkaranji Municipal Transport</h1>
+                    <p data-en="Connecting the City" data-mr="शहराला जोडणारी सेवा">Connecting the City</p>
+                </div>
+            </div>
+            
+                <nav class="mt-4 sticky top-0 z-50 bg-white">
+                    <ul class="flex space-x-6 justify-center">
+                        <li><a href="#home" class="nav-link text-gray-700 hover:text-gray-900" data-en="Home" data-mr="मुख्यपृष्ठ">Home</a></li>
+                        <li><a href="#routes" class="nav-link text-gray-700 hover:text-gray-900" data-en="Routes" data-mr="मार्ग">Routes</a></li>
+                        <li><a href="#schedule" class="nav-link text-gray-700 hover:text-gray-900" data-en="Schedule" data-mr="वेळापत्रक">Schedule</a></li>
+                        <li><a href="#fares" class="nav-link text-gray-700 hover:text-gray-900" data-en="Fares" data-mr="भाडे">Fares</a></li>
+                        <li><a href="#track" class="nav-link text-gray-700 hover:text-gray-900" data-en="Track Bus" data-mr="बस ट्रॅक">Track Bus</a></li>
+                        <li><a href="#contact" class="nav-link text-gray-700 hover:text-gray-900" data-en="Contact" data-mr="संपर्क">Contact</a></li>
+                    </ul>
+                </nav>
+            
+        </div>
+    </header>
+
+    <section class="hero">
+        <div class="container">
+            <div class="search-box">
+                <h2 data-en="Plan Your Journey" data-mr="प्रवासाचे नियोजन करा">Plan Your Journey</h2>
+                <form id="journeyForm">
+                    <div class="form-group">
+                        <input type="text" id="from" placeholder="From" required>
+                        <input type="text" id="to" placeholder="To" required>
+                        <button type="submit" data-en="Search" data-mr="शोधा">Search</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Quick Links -->
+    <section class="quick-links">
+        <div class="container">
+            <div class="grid">
+                <div class="card">
+                    <i class="fas fa-route"></i>
+                    <h3 data-en="Routes" data-mr="मार्ग">Routes</h3>
+                    <p data-en="Find all bus routes" data-mr="सर्व बस मार्ग शोधा">Find all bus routes</p>
+                </div>
+                <div class="card">
+                    <i class="fas fa-clock"></i>
+                    <h3 data-en="Timetable" data-mr="वेळापत्रक">Timetable</h3>
+                    <p data-en="Check bus timings" data-mr="बस वेळापत्रक तपासा">Check bus timings</p>
+                </div>
+                <div class="card">
+                    <i class="fas fa-ticket-alt"></i>
+                    <h3 data-en="Bus Pass" data-mr="बस पास">Bus Pass</h3>
+                    <p data-en="Get your bus pass" data-mr="तुमचा बस पास मिळवा">Get your bus pass</p>
+                </div>
+                <div class="card">
+                    <i class="fas fa-map-marker-alt"></i>
+                    <h3 data-en="Track Bus" data-mr="बस ट्रॅक">Track Bus</h3>
+                    <p data-en="Track your bus live" data-mr="तुमची बस लाईव्ह ट्रॅक करा">Track your bus live</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- News & Updates -->
+    <section class="news">
+        <div class="container">
+            <h2 data-en="Latest Updates" data-mr="ताज्या अपडेट्स">Latest Updates</h2>
+            <div class="news-ticker">
+                <!-- Will be populated by JavaScript -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-section">
+                    <h3 data-en="Contact Us" data-mr="संपर्क करा">Contact Us</h3>
+                    <p>Main Bus Stand, Ichalkaranji</p>
+                    <p>Phone: 123-456-7890</p>
+                    <p>Email: contact@imt.com</p>
+                </div>
+                <div class="footer-section">
+                    <h3 data-en="Quick Links" data-mr="जलद दुवे">Quick Links</h3>
+                    <ul>
+                        <li><a href="#">About Us</a></li>
+                        <li><a href="#">Careers</a></li>
+                        <li><a href="#">RTI</a></li>
+                        <li><a href="#">Tender Notices</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h3 data-en="Download App" data-mr="अॅप डाउनलोड करा">Download App</h3>
+                    <div class="app-links">
+                        <a href="#"><img src="playstore.png" alt="Play Store"></a>
+                        <a href="#"><img src="appstore.png" alt="App Store"></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

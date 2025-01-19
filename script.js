@@ -1,4 +1,4 @@
-// Language Switching Functionality
+
 document.addEventListener('DOMContentLoaded', function() {
     const languageToggle = document.getElementById('languageToggle');
     let isEnglish = true;

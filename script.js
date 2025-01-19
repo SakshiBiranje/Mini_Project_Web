@@ -12,7 +12,7 @@ document.addEventListener('DOMContentLoaded', function() {
                 element.getAttribute('data-mr');
         });
 
-        // Update placeholders for inputs
+      
         const fromInput = document.getElementById('from');
         const toInput = document.getElementById('to');
         
